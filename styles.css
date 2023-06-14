@@ -40,6 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 header div {
@@ -71,6 +72,7 @@ section {
     background-color: #C6FFE9;
     padding: 80px 240px;
     gap: 104px;
+    box-shadow: 0px 4px 4px inset rgba(0, 0, 0, 0.25);
 }
 .section{
     margin-bottom: 450px;
