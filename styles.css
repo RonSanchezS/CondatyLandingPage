@@ -1,13 +1,16 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     margin: 0px;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
+
 .upperBand {
     display: flex;
     background: rgb(0, 207, 127);
@@ -17,30 +20,39 @@ a{
     color: white;
     height: 80px;
 }
-.form{
+
+.form {
     display: flex;
 }
 
+.footerMSG{
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: auto;
+}
 .upperBand p {
     padding: 1rem;
     font-size: 32px;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header div{
+
+header div {
     display: flex;
     align-items: center;
     gap: 2rem;
     height: 80px;
 }
-video{
+
+video {
     max-width: 616px;
 }
-.btnPrimary{
+
+.btnPrimary {
     background-color: #00FF9D;
     border: none;
     padding: 4px 2px;
@@ -48,49 +60,158 @@ video{
     font-weight: bold;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.mainPage{
+
+.mainPage {
     padding: 0px 240px;
 }
-section{
+
+section {
     display: flex;
     background-color: #C6FFE9;
     padding: 80px 240px;
     gap: 104px;
+    margin-bottom: 1000px;
 }
-section > *{
+
+section>* {
     flex: 1;
 }
-.btnGrande{
+
+.btnGrande {
     font-size: 26px;
     padding: 2px 8px;
-    
+
 }
-.greenSection{
+
+.greenSection {
     display: flex;
     flex-direction: column;
 }
-.textoCabecera{
+
+.textoCabecera {
     font-size: 32px;
     max-width: 481px;
 }
-.bigP{
+
+.bigP {
     max-width: 528px;
 }
-.textoCabecera p{
+
+.textoCabecera p {
     margin: 0px;
 }
-.callToAction{
+
+.callToAction {
     display: flex;
     gap: 16px;
     margin-top: 32px;
     font-size: 28px;
     align-items: center;
 }
-.callToAction button{
+
+.callToAction button {
     background-color: black;
     color: #00FF9D;
     border: none;
     font-size: 24px;
     padding: 2px 16px;
     border-radius: 8px;
+}
+
+#sectionDemo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sectionDiv {
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 240px;
+}
+
+#dentroSection {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerContainer {
+    margin-top: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 54px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.24);
+    border-radius: 24px;
+
+}
+
+.innerContainer>p {
+    flex: 1;
+    margin: 0px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+form button {
+    max-width: 225px;
+    padding: 4px 20px;
+}
+
+.innerFormDiv {
+    display: flex;
+    gap: 50px;
+
+}
+
+.innerFormDiv * {
+    width: 50px;
+    flex: 1;
+    max-width: 46%;
+}
+
+#correoElectronico {
+    max-width: 100%;
+}
+
+.dosDivsFlex {
+    display: flex;
+    gap: 30px;
+    max-width: 100%;
+}
+
+.dosDivsFlex * {
+    flex: 1;
+    max-width: 100%;
+
+}
+
+p a {
+    color: red;
+}
+
+input,
+select {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+
+    padding: 4px 0px;
 }
