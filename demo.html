@@ -7,48 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-  <?php
-
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-
-
-
-  // Obtener los datos del formulario
-  $ciudad = $_POST["ciudad"];
-  $correoElectronico = $_POST["correoElectronico"];
-  $nombreCompleto = $_POST["nombreCompleto"];
-  $celular = $_POST["celular"];
-  $cargo = $_POST["cargo"];
-  $interes = $_POST["interes"];
-  $experiencia = $_POST["experiencia"];
-
-
-
-  // Configurar el correo
-  $to = $correoElectronico; // Reemplaza con la dirección de correo del destinatario
-  $subject = "Nuevo formulario de contacto";
-  $message = "Ciudad: " . $ciudad . "\n";
-  $message .= "Correo Electrónico: " . $correoElectronico . "\n";
-  $message .= "Nombre Completo: " . $nombreCompleto . "\n";
-  $message .= "Celular: " . $celular . "\n";
-  $message .= "Cargo: " . $cargo . "\n";
-  $message .= "Interés: " . $interes . "\n";
-  $message .= "Experiencia: " . $experiencia . "\n";
-
-  // Enviar el correo
-  $headers = "From: " . $correoElectronico;
-  if (mail($to, $subject, $message, $headers)) {
-    // El correo se envió exitosamente
-    echo "Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.";
-  } else {
-    // Hubo un error al enviar el correo
-    echo "Ocurrió un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.";
-  }
-}
-?>
-    <main>
+  <main>
       <div class="upperBand">
         <p>Ahorra <strong>tiempo</strong>, vive <strong>tranquilo</strong></p>
       </div>
@@ -60,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button class="btnPrimary">Solicitar Demo</button>
           </div>
         </header>
-        <section id="sectionDiv">
+        <section id="sectionDiv" class="section">
           <div id="dentroSection">
             <div class="innerContainer">
               <p>¡Deja tus datos y te agendaremos una prueba gratuita!</p>
@@ -119,14 +78,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </section>
       </div>
     </main>
-    <footer>
       <div class="footerMSG">
         <p>
           ¡Estaremos felices de atenderte y resolver cualquier inquietud!
           Escríbenos, un asesor te atenderá de inmediato.
         </p>
-        <button>Contáctanos</button>
+        <button class="btnPrimary btnGrande">Contáctanos</button>
+        <footer>
+          <a href="https://facebook.com"><img src="./assets/facebook.svg" alt="Facebook logo"></a>
+          <a href="https://tiktok.com"><img src="./assets/tiktok.svg" alt="Tiktok logo"></a>
+          <a href="https://instagram.com"><img src="./assets/instagram.svg" alt="Instagram logo"></a>
+          <a href="https://youtube.com"><img src="./assets/youtube.svg" alt="Youtube logo"></a>
+          <a href="https://linkedin.com"><img src="./assets/linkedin.svg" alt="LinkedIn logo"></a>
+        </footer>
       </div>
-    </footer>
+    
   </body>
 </html>
