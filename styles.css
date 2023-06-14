@@ -4,6 +4,10 @@
 body{
     margin: 0px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .upperBand {
     display: flex;
     background: rgb(0, 207, 127);
@@ -12,6 +16,9 @@ body{
     align-items: center;
     color: white;
     height: 80px;
+}
+.form{
+    display: flex;
 }
 
 .upperBand p {
