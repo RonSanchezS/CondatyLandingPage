@@ -1,0 +1,89 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0px;
+}
+.upperBand {
+    display: flex;
+    background: rgb(0, 207, 127);
+    background: linear-gradient(90deg, rgba(0, 207, 127, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 80px;
+}
+
+.upperBand p {
+    padding: 1rem;
+    font-size: 32px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 80px;
+}
+video{
+    max-width: 616px;
+}
+.btnPrimary{
+    background-color: #00FF9D;
+    border: none;
+    padding: 4px 2px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.mainPage{
+    padding: 0px 240px;
+}
+section{
+    display: flex;
+    background-color: #C6FFE9;
+    padding: 80px 240px;
+    gap: 104px;
+}
+section > *{
+    flex: 1;
+}
+.btnGrande{
+    font-size: 26px;
+    padding: 2px 8px;
+    
+}
+.greenSection{
+    display: flex;
+    flex-direction: column;
+}
+.textoCabecera{
+    font-size: 32px;
+    max-width: 481px;
+}
+.bigP{
+    max-width: 528px;
+}
+.textoCabecera p{
+    margin: 0px;
+}
+.callToAction{
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    font-size: 28px;
+    align-items: center;
+}
+.callToAction button{
+    background-color: black;
+    color: #00FF9D;
+    border: none;
+    font-size: 24px;
+    padding: 2px 16px;
+    border-radius: 8px;
+}
